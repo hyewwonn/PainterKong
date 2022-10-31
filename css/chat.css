@@ -34,7 +34,7 @@ body{
 .chat-wrapper {
     width: 100%;
     height: 47rem;
-    max-width: 47rem;
+    max-height: 47rem;
     background-color: #E7C79E;
     border-radius: 0 0 2rem 2rem;
     margin-top: -1rem;
