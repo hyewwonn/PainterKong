@@ -50,10 +50,34 @@ body{
     align-items: center;
 }
 .chat-input div {
-    background-color: white;
-    display: inline-block;
-    padding: 0.5rem;
-    border-radius: 5px;
-    font-size: 110%;
-    margin: 3px;
+    position: relative;
+    width: 100px;
+    height: 80px;
+    padding: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat-input .chat-mission {
+    width: 140px;
+}
+.chat-input .chat-advantage {
+    width: 170px;
+}
+.chat-input div::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 0 10px 13px;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    z-index: 1;
+    right: -13px;
+    top: 30px;
 }
