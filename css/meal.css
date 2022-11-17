@@ -6,6 +6,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+.meal-x {
+    font-size: 600%;
+    color: #FF9966;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
 .wrapper {
     display: flex;
     justify-content: center;
@@ -22,17 +29,18 @@ body {
     margin-right: 1rem;
 }
 .meal-user img {
-    width: 2.75rem;
+    width: 7rem;
     height: auto;
 }
 #meal-time-p {
+    font-size: 300%;
     color: rgb(99, 99, 99);
 }
 .meal-select {
-    width: 25rem;
+    width: 150%;
     border-radius: 1.25rem;
-    box-shadow: 0px 0px 10px 3px rgb(188, 188, 188);
-    padding: 0.5rem 1.5rem;
+    box-shadow: 0px 0px 20px 6px rgb(188, 188, 188);
+    padding: 15% 5%;
     margin-bottom: 2.5rem;
 }
 .meal-select-top,
@@ -41,25 +49,21 @@ body {
     justify-content: center;
 }
 .meal-select i {
-    font-size: 5rem;
+    font-size: 1300%;
     color: #57AA6C;
     padding: 0.5rem;
 }
-.meal-select-ok-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aquamarine;
-}
 .meal-select-ok {
-    width: 25rem;
-    height: 2.5rem;
+    width: 150%;
+    height: 6rem;
     background-color: #77A644;
-    text-align: center;
     padding: 0.2rem 1.5rem;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .meal-select-ok i {
-    font-size: 2.5rem;
+    font-size: 400%;
     color: white;
 }
