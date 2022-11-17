@@ -13,17 +13,13 @@
         <i class='bx bx-left-arrow-alt'></i>
         <p class="chat-p">화가콩</p>
     </div>
-    <div class="chat-wrapper">
-        <div class="chat">
-            <ul id="chat_ul">
-                <!-- 동적 생성 -->
-            </ul>
-            <div class="chat-input">
-                <div class="chat-hello" id="chat-hello" onclick="hello()">안녕?</div>
-                <div class="chat-tough" id="chat-tough" onclick="tough()">힘들어</div>
-                <div class="chat-mission" id="chat-mission" onclick="mission()">미션을 알려줘</div>
-                <div class="chat-advantage" id="chat-advantage" onclick="advantage()">채식의 장점이 뭐야?</div>
-            </div>
+    <div class="chat chat-wrapper">
+        <div class="scroll" id="scroll"></div>
+        <div class="chat-input">
+            <div class="chat-hello" id="chat-hello" onclick='hello()'>안녕?</div>
+            <div class="chat-tough" id="chat-tough" onclick='tough()'>힘들어</div>
+            <div class="chat-mission" id="chat-mission" onclick='mission()'>미션을 알려줘</div>
+            <div class="chat-advantage" id="chat-advantage" onclick='advantage()'>채식의 장점이 뭐야?</div>
         </div>
     </div>
     <script type="text/javascript" src="/js/chat.js"></script>

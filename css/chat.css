@@ -11,7 +11,7 @@ html, body {
     margin: 0;
 }
 body{
-    background-color: #3F4435;
+    background-color: #EFC69A;
     /* background-color: #585C3C; */
 }
 
@@ -21,12 +21,14 @@ body{
     height:5.5%;
     /* background-color: #4C9C62; */
     background-color: white;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 0 0 2rem 2rem;
     box-shadow: 1px 1px 5px 1px rgb(132, 132, 132);
     position: fixed;
+    z-index: 1;
 }
 .chat-bar i, .chat-p {
     /* color: white; */
@@ -44,22 +46,24 @@ body{
 /* 채팅 */
 .chat-wrapper {
     width: 100%;
-    height: 85%;
+    height: auto;
     /* max-height: 2200px; */
     /* background-color: #E7C79E; */
     background-color: #EFC69A;
     border-radius: 0 0 2rem 2rem;
     margin-top: -1rem;
+    padding-bottom: 80px;
 }
 .chat-input {
     width: 100%;
-    height: 20rem;
+    height: 26rem;
     position: fixed;
     bottom: 0;
     background-color: #3F4435;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 2rem 2rem 0 0;
 }
 .chat-input div {
     position: relative;
@@ -71,7 +75,6 @@ body{
     -moz-border-radius: 10px;
     border-radius: 10px;
     margin: 1.5rem;
-    margin-top: -2rem;
     font-size: 180%;
     display: flex;
     justify-content: center;
@@ -97,8 +100,72 @@ body{
     right: -13px;
     top: 30px;
 }
-.chat ul,.chat li {
-    list-style: none;
+.scroll {
+    height: 100%;
+    padding: 13% 5% 0 5%;
+    margin: 0;
+    margin-bottom: 400px;
+    overflow: scroll;
+    /* display: flex;
+    flex-direction: column; */
+}
+.send-wrapper{
+    display: flex;
+    justify-content: end;
+}
+.send {
+    /* text-align: right; */
+    width: 60%;
+    word-break: break-all;
+    padding: 3%;
+    font-size: 260%;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+}
+.send::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 0 15px 15px;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    /* z-index: 1; */
+    right: -15px;
+    top: 45px;
+}
+.receive-wrapper {
+    display: flex;
+    align-items: center;
+}
+.receive {
+    width: 60%;
+    word-break: break-all;
+    padding: 3%;
+    font-size: 260%;
+    background-color: white;
+    margin: 3rem;
+    border-radius: 1rem;
+    display: inline-block;
+    position: relative;
+}
+.receive::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    left: -15px;
+    top: 50px;
+}
+.chatkong {
+    width: 120px;
+    height: auto;
 }
 /* hover */
 .chat-input div:hover {
