@@ -186,6 +186,7 @@ body{
     word-break: keep-all;
 
 }
+
 /* hover */
 .chat-input div:hover {
     transition: 0.5s;

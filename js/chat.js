@@ -13,7 +13,7 @@ function tough() {
 function mission(){
     $el.innerHTML += `<div class="send-wrapper"><div class="send" style="width:100px">미션을 알려줘</div></div>`;
     $el.innerHTML += `<div class="receive-wrapper"><img class="chatkong" src="/img/user-circle-solid-24.png"></img><div class="receive" style="width:150px">이번 주의 미션이에요. 제 미션을 해결해 주세요!</div></div>`
-    $el.innerHTML += `<div class="mission-wrapper"><div class="mission1"><p>제철과일 한 가지 먹기</p></div><div class="mission2"><p>비타민 k가 풍부한 오이 먹기</p></div><div class="mission3"><p>피로 해소에 좋은 토마토 먹기</p></div></div>`;
+    $el.innerHTML += `<div class="mission-wrapper"><div class="mission1" onclick='mission1()'><p>제철과일 한 가지 먹기</p></div><div class="mission2" onclick='mission2()'><p>비타민 k가 풍부한 오이 먹기</p></div><div class="mission3" onclick='mission3()'><p>피로 해소에 좋은 토마토 먹기</p></div></div>`;
     scrollTop();
 }
 function advantage() {
@@ -21,6 +21,17 @@ function advantage() {
     $el.innerHTML += `<div class="receive-wrapper"><img class="chatkong" src="/img/user-circle-solid-24.png"></img><div class="receive" style="width:170px">채식을 하면 환경과 건강에 도움이 되고, 체중 감량 효과를 볼 수 있어요!</div></div>`
     scrollTop();
 }
+function mission1() {
+    $bd.innerHTML += `<div class="mission-dialog">제철과일 한 가지 먹기</div>`;
+}
+function mission2() {
+    alert("test2");
+}
+function mission3() {
+    alert("test3");
+}
+
+
 
 function scrollTop() {
     $('scroll').scrollTop($('#scroll')[0].scrollHeight);
