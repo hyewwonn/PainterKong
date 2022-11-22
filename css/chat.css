@@ -160,8 +160,9 @@ body{
     top: 12px;
 }
 .chatkong {
-    width: 40px;
+    width: 35px;
     height: auto;
+    border-radius: 50%;
 }
 /* mission */
 .mission-wrapper {
@@ -185,6 +186,51 @@ body{
     padding: 5%;
     word-break: keep-all;
 
+}
+
+/* mission dialog */
+#missionDialog {
+    background-color: white;
+    width: 80%;
+    height:60%;
+    border-radius: 0.3rem;
+    border: none;
+    z-index: 100;
+    text-align: center;
+}
+
+.missionbtn {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.missionOk {
+    width: 60px;
+    height: 60px;
+    background-color: #7BAC1F;
+    font-size: 200%;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.missionClose {
+    width: 60px;
+    height: 60px;
+    font-size: 200%;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* hover */
