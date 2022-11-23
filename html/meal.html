@@ -9,7 +9,7 @@
     <title>MEAL</title>
 </head>
 <body>
-    <div class="meal-x"><i class='bx bx-x'></i></div>
+    <a href="javascript:history.back();"><div class="meal-x"><i class='bx bx-x'></i></div></a>
     <div class="wrapper">
         <div class="user-time">
             <div class="meal-user">
@@ -20,19 +20,27 @@
         </div>
         <div class="meal-select">
             <div class="meal-select-top">
-                <div class="meat"><img src="/img/vege_2.png"></div>
-                <div class="poultry"><img src="/img/vege_3.png"></div>
-                <div class="fish"><img src="/img/vege_4.png"></div>
+                <div class="meat" onclick="meat()"><img src="/img/vege_2.png"></div>
+                <div class="poultry" onclick="poultry()"><img src="/img/vege_3.png"></div>
+                <div class="fish" onclick="fish()"><img src="/img/vege_4.png"></div>
             </div>
             <div class="meal-select-bottom">
-                <div class="egg"><img src="/img/vege_5.png"></div>
-                <div class="dairy"><img src="/img/vege_6.png"></div>
-                <div class="vegetable"><img src="/img/vege_1.png"></div>
+                <div class="egg" onclick="egg()"><img src="/img/vege_5.png"></div>
+                <div class="dairy" onclick="dairy()"><img src="/img/vege_6.png"></div>
+                <div class="vegetable" onclick="vegetable()"><img src="/img/vege_1.png"></div>
             </div> 
         </div>
-        <div class="meal-select-ok">
+        <a href="javascript:history.back();" class="select-a"><div class="meal-select-ok" id="mealOk" onclick="mealok()">
             <i class='bx bx-check'></i>
-        </div>
+        </div></a>
     </div>
+    <script>
+        me = 0;
+        po = 0;
+        fi = 0;
+        eg = 0;
+        da = 0;
+        ve = 0;
+    </script>
     <script src="/js/meal.js"></script>
 </body>
