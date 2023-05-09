@@ -19,33 +19,38 @@ const $egslt = document.querySelector('.egg');
 const $daslt = document.querySelector('.dairy');
 const $veslt = document.querySelector('.vegetable');
 
+function mealok() {
+    const page = "http://127.0.0.1:5500/PainterKong/html/result.html?";
+    const query = `me=${me}&po=${po}&fi=${fi}&eg=${eg}&da=${da}&ve=${ve}`;
+    location.href = page + query;
+}
 function mechk() {
     me = !me;
     if(me==true) $meslt.innerHTML += `<i class='mschk bx bx-check'></i>`
-    else $meslt.innerHTML = `<img src="/img/vege_2.png">`
+    else $meslt.innerHTML = `<img src="../img/vege_2.png">`
 }
 function pochk() {
     po = !po;
     if(po==true) $poslt.innerHTML += `<i class='mschk bx bx-check'></i>`
-    else $poslt.innerHTML = `<img src="/img/vege_3.png">`
+    else $poslt.innerHTML = `<img src="../img/vege_3.png">`
 }
 function fichk() {
     fi = !fi;
     if(fi==true) $fislt.innerHTML += `<i class='mschk bx bx-check'></i>`
-    else $fislt.innerHTML = `<img src="/img/vege_4.png">`
+    else $fislt.innerHTML = `<img src="../img/vege_4.png">`
 }
 function egchk() {
     eg = !eg;
     if(eg==true) $egslt.innerHTML += `<i class='mschk bx bx-check'></i>`
-    else $egslt.innerHTML = `<img src="/img/vege_5.png">`
+    else $egslt.innerHTML = `<img src="../img/vege_5.png">`
 }
 function dachk() {
     da = !da;
     if(da==true) $daslt.innerHTML += `<i class='mschk bx bx-check'></i>`
-    else $daslt.innerHTML = `<img src="/img/vege_6.png">`
+    else $daslt.innerHTML = `<img src="../img/vege_6.png">`
 }
 function vechk() {
     ve = !ve;
     if(ve==true) $veslt.innerHTML += `<i class='mschk bx bx-check'></i>`
-    else $veslt.innerHTML = `<img src="/img/vege_1.png">`
+    else $veslt.innerHTML = `<img src="../img/vege_1.png">`
 }
