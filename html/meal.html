@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/MEAL.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>MEAL</title>
+</head>
+<body>
+    <a href="javascript:history.back();"><div class="meal-x"><i class='bx bx-x'></i></div></a>
+    <div class="wrapper">
+        <div class="user-time">
+            <div class="meal-user">
+                <img src="../img/user-circle-solid-24.png">
+            </div>
+            <div class="meal-time">
+            </div>
+        </div>
+        <div class="meal-select">
+            <div class="meal-select-top">
+                <div class="ms meat" onclick="mechk()"><img src="../img/vege_2.png"></div>
+                <div class="ms poultry" onclick="pochk()"><img src="../img/vege_3.png"></div>
+                <div class="ms fish" onclick="fichk()"><img src="../img/vege_4.png"></div>
+            </div>
+            <div class="meal-select-bottom">
+                <div class="ms egg" onclick="egchk()"><img src="../img/vege_5.png"></div>
+                <div class="ms dairy" onclick="dachk()"><img src="../img/vege_6.png"></div>
+                <div class="ms vegetable" onclick="vechk()"><img src="../img/vege_1.png"></div>
+            </div> 
+        </div>
+        <a href="javascript:history.back();" class="select-a"><div class="meal-select-ok" id="mealOk" onclick="mealok()">
+            <i class='bx bx-check'></i>
+        </div></a>
+    </div>
+    <script>
+        me = false;
+        po = false;
+        fi = false;
+        eg = false;
+        da = false;
+        ve = false;
+    </script>
+    <script src="../js/meal.js"></script>
+</body>

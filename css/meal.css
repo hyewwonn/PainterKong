@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.meal-x {
+    color: #FF9966;
+    font-size: 150%;
+    position: absolute;
+    top: 2%;
+    left: 3%;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -5rem;
+}
+.user-time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.meal-user {
+    margin-right: 0.5rem;
+}
+#meal-time-p {
+    font-size: small;
+    color: rgb(99, 99, 99);
+}
+.meal-select {
+    width: 75%;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 8px 3px rgb(188, 188, 188);
+    padding: 10% 5%;
+    margin-bottom: 2.5rem;
+}
+.meal-select-top,
+.meal-select-bottom {
+    display: flex;
+    justify-content: center;
+}
+.meal-select div {
+    display: flex;
+    justify-content: center;
+}
+.meal-select img {
+    width: 80%;
+    height: auto;
+}
+.meal-select img:hover {
+    transition: 0.5s;
+    transform: translateY(-10px);
+    background-color: #fff;
+}
+.mschk {
+    font-size: 350%;
+    font-weight: 900;
+    color: #FF9966;
+    position: absolute;
+    text-align: center;
+    margin-top: 2%;
+}
+.select-a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.meal-select-ok {
+    width: 70%;
+    height: 1.5rem;
+    background-color: #77A644;
+    padding: 0.2rem 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.meal-select-ok i {
+    font-size: 200%;
+    color: white;
+}

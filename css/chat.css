@@ -1,0 +1,241 @@
+/* 하단탭바(주황) : #FF9966
+하단탭바(연두) : #7BAC1F
+식단,서브(그린) : #55B46F 
+채팅배경div(살구) : #EFC69A 
+채팅배경div(녹색) : #3F4435 
+기타 서브 오브젝트(연두) : #DEEBA4
+기타 서브 오브젝트(녹색) : #5B6348 */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body{
+    background-color: #EFC69A;
+    /* background-color: #585C3C; */
+}
+
+/* bar */
+.chat-bar {
+    width: 100%;
+    height: 6%;
+    /* background-color: #4C9C62; */
+    background-color: white;
+    font-size: small;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 1px 1px 5px 1px rgb(132, 132, 132);
+    position: fixed;
+    z-index: 1;
+}
+.chat-bar i, .chat-p {
+    /* color: white; */
+    /* color: #4C9C62; */
+    color: #55B46F;
+    font-weight: bold;
+}
+.chat-bar i {
+    font-size: 120%;
+    position: absolute;
+    left: 3%;
+    cursor: pointer;
+}
+
+/* 채팅 */
+.chat-wrapper {
+    width: 100%;
+    height: auto;
+    /* max-height: 2200px; */
+    /* background-color: #E7C79E; */
+    background-color: #EFC69A;
+    border-radius: 0 0 2rem 2rem;
+    margin-top: -1rem;
+    padding-bottom: 80px;
+}
+.chat-input {
+    width: 100%;
+    height: 9rem;
+    position: fixed;
+    bottom: 0;
+    background-color: #3F4435;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border-radius: 1rem 1rem 0 0;
+}
+.chat-input div {
+    position: relative;
+    padding: 8px;
+    background: #FFFFFF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 10px 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px rgb(104, 104, 104);
+}
+.chat-input div::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    z-index: 1;
+    right: -8px;
+    top: 13px;
+}
+.scroll {
+    height: 100%;
+    padding: 17% 5% 0 5%;
+    margin: 0;
+    margin-bottom: 80px;
+    overflow-y: scroll;
+    /* display: flex;
+    flex-direction: column; */
+}
+.send-wrapper{
+    display: flex;
+    justify-content: end;
+}
+.send {
+    /* text-align: right; */
+    width: 60%;
+    font-size: small;
+    word-break: keep-all;
+    padding: 3%;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    display: flex;
+    box-shadow: 2px 2px 2px 0.1px rgb(159, 159, 159);
+}
+.send::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    /* z-index: 1; */
+    right: -8px;
+    top: 13px;
+}
+.receive-wrapper {
+    display: flex;
+    align-items: center;
+}
+.receive {
+    width: 60%;
+    font-size: small;
+    word-break: keep-all;
+    padding: 3%;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    position: relative;
+    box-shadow: 2px 2px 2px 0.1px rgb(159, 159, 159);
+}
+.receive::after{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 5px 8px 5px 0;
+    border-color: transparent #FFFFFF;
+    display: block;
+    width: 0;
+    left: -8px;
+    top: 12px;
+}
+.chatkong {
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+}
+/* mission */
+.mission-wrapper {
+    width: 200px;
+    height: auto;
+    background-color: white;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    padding: 5%;
+    box-shadow: 2px 2px 2px 0.5px rgb(159, 159, 159);
+}
+.mission1, .mission2, .mission3 {
+    font-size: small;
+    background-color: #B7C18D;
+    color: white;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+.mission-wrapper p {
+    padding: 5%;
+    word-break: keep-all;
+
+}
+
+/* mission dialog */
+#missionDialog {
+    background-color: white;
+    width: 80%;
+    height:60%;
+    border-radius: 0.3rem;
+    border: none;
+    z-index: 100;
+    text-align: center;
+}
+
+.missionbtn {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.missionOk {
+    width: 60px;
+    height: 60px;
+    background-color: #7BAC1F;
+    font-size: 200%;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.missionClose {
+    width: 60px;
+    height: 60px;
+    font-size: 200%;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover */
+.chat-input div:hover {
+    transition: 0.5s;
+    transform: translateY(-10px);
+    background-color: #fff;
+}
